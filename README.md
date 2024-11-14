@@ -1,9 +1,9 @@
 # TorConnect
 This C program, "TorConnect," establishes a secure connection to a target website via the Tor network using a SOCKS5 proxy. By connecting to Tor's local proxy at 127.0.0.1:9050, it routes traffic from any Linux command directly through Tor, providing privacy and anonymity for command-line operations.
 
-# Toralizer
+# TorConnect
 
-Toralizer is a C-based command-line tool that routes any Linux command's network traffic through the Tor network using a SOCKS5 proxy. This tool allows you to connect securely and anonymously to specified IP addresses or domain names by leveraging Tor's privacy features. It’s especially useful for applications like `curl`, `ssh`, and `npm`, which can now run through Tor with minimal setup.
+TorConnect is a C-based command-line tool that routes any Linux command's network traffic through the Tor network using a SOCKS5 proxy. This tool allows you to connect securely and anonymously to specified IP addresses or domain names by leveraging Tor's privacy features. It’s especially useful for applications like `curl`, `ssh`, and `npm`, which can now run through Tor with minimal setup.
 
 ## Features
 
@@ -25,13 +25,13 @@ Toralizer is a C-based command-line tool that routes any Linux command's network
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/toralizer.git
-    cd toralizer
+    git clone https://github.com/yourusername/torConnect.git
+    cd torConnect
     ```
 
 2. **Compile the Code**:
     ```bash
-    gcc -o toralizer toralizer.c
+    gcc -o torConnect torConnect.c
     ```
 
 ## Usage
@@ -39,5 +39,5 @@ Toralizer is a C-based command-line tool that routes any Linux command's network
 Run the program by specifying a hostname and port. For example, to connect to `example.com` over HTTP (port 80):
 
 ```bash
-./toralizer example.com 80
+./torConnect example.com 80
 
